@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+"use client";
+import { useEffect } from "react";
 import CompletedList from "./CompletedList";
 import { toast } from "sonner";
 
@@ -20,7 +21,7 @@ const Complete = ({ done, doneRemove, setDone }) => {
         </h1>
         {done.length !== 0 ? (
           <span
-            className="bg-yellow-500/20 rounded-full inline-block text-sm p-3 hover:bg-red-500/20 hover:scale-110 duration-200 ease-in-out cursor-pointer text-white w-fit"
+            className="bg-zinc-500/20 rounded-full inline-block text-sm p-3 hover:bg-red-500/20 hover:scale-110 duration-300 ease-in-out cursor-pointer text-white w-fit"
             onClick={() => {
               removeAll();
             }}>

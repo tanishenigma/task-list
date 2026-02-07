@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+"use client";
+import { useEffect } from "react";
 import CardComponent from "./CardComponent";
 import { toast } from "sonner";
 

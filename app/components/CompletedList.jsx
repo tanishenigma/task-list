@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import CompletedCard from "./CompletedCard";
 
 const CompletedList = ({ done, doneRemove }) => {

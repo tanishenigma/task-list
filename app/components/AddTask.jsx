@@ -1,5 +1,6 @@
+"use client";
 import { PlusIcon } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const AddTask = ({ onAdd }) => {
   const [text, setText] = useState("");
@@ -10,9 +11,9 @@ const AddTask = ({ onAdd }) => {
     setText("");
   };
   return (
-    <div className="flex m-10">
+    <div className="flex justify-center m-10">
       <form
-        className="flex items-center rounded-xl p-2 bg-zinc-700/50 border border-zinc-400/40"
+        className="flex items-center rounded-xl p-2  bg-zinc-700/50 border border-zinc-400/40"
         onSubmit={handleSubmit}>
         <input
           value={text}

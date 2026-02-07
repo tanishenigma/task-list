@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import CardComponent from "./CardComponent";
+"use client";
+import { useState } from "react";
 import Complete from "./Complete";
 import Incomplete from "./Incomplete";
 

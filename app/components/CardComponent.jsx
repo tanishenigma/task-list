@@ -1,9 +1,9 @@
+"use client";
 import { CheckCircle, TrashIcon } from "lucide-react";
-import React from "react";
 
 const CardComponent = ({ index, id, text, onRemove, onCheck }) => {
   return (
-    <div className="flex flex-col bg-zinc-700/50 hover:bg-red-600/10 m-5 p-5 w-80 h-40  hover:scale-105 transition-all duration-200 hover:border hover:border-zinc-400/50 hover:transition-all hover:ease-in-out ease-in-out rounded-xl">
+    <div className="flex flex-col bg-zinc-700/50 hover:bg-zinc-50/20 m-5 p-5 w-80 h-40  hover:scale-105 transition-all duration-200 hover:border hover:border-zinc-400/50 hover:transition-all hover:ease-in-out ease-in-out rounded-xl">
       <div>
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold">Task {index + 1}</h1>
