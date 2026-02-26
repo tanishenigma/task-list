@@ -1,16 +1,16 @@
 "use client";
 import CompletedCard from "./CompletedCard";
 
-const CompletedList = ({ done, doneRemove }) => {
+const CompletedList = ({ tasks, onToggle, onRemove }) => {
   return (
     <div className="flex flex-wrap gap-x-10 m-5 mt-0">
-      {done.map((task, index) => (
+      {tasks.map((task) => (
         <CompletedCard
           key={task.id}
-          id={task.doneID}
+          id={task.id}
           text={task.text}
-          doneRemove={doneRemove}
-          index={index}
+          onToggle={onToggle}
+          onRemove={onRemove}
         />
       ))}
     </div>

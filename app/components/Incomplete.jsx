@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import CardComponent from "./CardComponent";
 import { toast } from "sonner";
 
-const Incomplete = ({ tasks, onRemove, onCheck }) => {
+const Incomplete = ({ tasks, onRemove, onToggle }) => {
   useEffect(() => {
     if (tasks.length == 0) {
       toast("Congrats! You Finished all the tasks.");
@@ -16,14 +16,14 @@ const Incomplete = ({ tasks, onRemove, onCheck }) => {
       </h1>
       {tasks.length !== 0 ? (
         <div className="flex flex-wrap m-5 ">
-          {tasks.map((t, index) => (
+          {tasks.map((t) => (
             <CardComponent
               key={t.id}
               id={t.id}
               text={t.text}
+              completed={t.completed}
               onRemove={onRemove}
-              index={index}
-              onCheck={onCheck}
+              onToggle={onToggle}
             />
           ))}
         </div>

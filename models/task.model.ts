@@ -8,6 +8,7 @@ import mongoose from "mongoose";
 */
 interface ITask extends Document {
   text: string;
+  completed: boolean;
   _id: mongoose.Types.ObjectId;
   __v: number;
 }
@@ -15,6 +16,7 @@ interface ITask extends Document {
 interface ITaskJSON {
   id?: string;
   text?: string;
+  completed?: boolean;
   _id?: mongoose.Types.ObjectId;
   __v?: number;
 }
